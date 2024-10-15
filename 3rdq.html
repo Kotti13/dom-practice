@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Class Example</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <p class="text">Toggle my background color!</p>
+    <button id="toggleButton">Toggle Highlight</button>
+    <script>
+        
+        const highlight=document.getElementById("toggleButton");
+        highlight.addEventListener("click",function(){
+            const background=document.querySelector("p");
+            background.style.backgroundColor="yellow";
+        })
+    </script>
+</body>
+
+<!-- Toggle the class name of the p element as “highlight” when clicking on the button. -->
+</html>
